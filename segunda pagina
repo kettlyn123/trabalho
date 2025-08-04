@@ -1,12 +1,1 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Segunda Página</title>
-</head>
-<body>
-    <h1>Bem-vindo à Segunda Página!</h1>
-    <p>Você chegou aqui clicando na seta.</p>
-    <a href="index.html">Voltar para a página inicial</a>
-</body>
-</html>
+
