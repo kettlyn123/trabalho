@@ -12,6 +12,30 @@
     <div class="container">
         <h1>Está é a Página Dois!</h1>
         <a href="index.html" class="button"> <img src="img4.jpg" alt="Descrição da imagem" width="100"></a>
+        
+
+<canvas id="canvasRedimensionado"></canvas>
+    
+    <script>
+        window.onload = function() {
+            const imagem = document.getElementById('imagemOriginal');
+            const canvas = document.getElementById('canvasRedimensionado');
+            const ctx = canvas.getContext('2d');
+
+            // Define o novo tamanho
+            const novaLargura = 400;
+            const novaAltura = 300;
+
+            // Define as dimensões do canvas
+            canvas.width = novaLargura;
+            canvas.height = novaAltura;
+
+            // Desenha a imagem no canvas, redimensionando-a
+            ctx.drawImage(imagem, 0, 0, novaLargura, novaAltura);
+        };
+    </script>
+
+        
     </div>
 </body>
 </html>
