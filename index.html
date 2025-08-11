@@ -12,6 +12,28 @@
     <img src="IMG1.jpg" alt="Descrição da imagem" width="300">
     <br>
    <a href="paginadois.html" class="button"> <img src="img3.jpg" alt="flecha" width="300"></a>
+
+<canvas id="canvasRedimensionado"></canvas>
+    
+    <script>
+        window.onload = function() {
+            const imagem = document.getElementById('imagemOriginal');
+            const canvas = document.getElementById('canvasRedimensionado');
+            const ctx = canvas.getContext('2d');
+
+            // Define o novo tamanho
+            const novaLargura = 400;
+            const novaAltura = 300;
+
+            // Define as dimensões do canvas
+            canvas.width = novaLargura;
+            canvas.height = novaAltura;
+
+            // Desenha a imagem no canvas, redimensionando-a
+            ctx.drawImage(imagem, 0, 0, novaLargura, novaAltura);
+        };
+    </script>
+    
     </body>
 </html>
 
